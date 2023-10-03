@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import axios from 'axios';
 import Layout from '../components/Layout';
 
-const HomePage = () => {
+const Chat = () => {
   const getUserData = async () => {
     try{
       const res = await axios.post(
@@ -23,9 +23,11 @@ useEffect(() => {
 }, []);
   return (
     <Layout>
-      <h1>Homepage</h1>
+      <h1>Chat</h1>
     </Layout>
   )
 }
 
-export default HomePage
+
+
+export default Chat 
